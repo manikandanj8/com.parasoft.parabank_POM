@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="4" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Prabank" duration-ms="6810" started-at="2021-07-31T16:38:02Z" finished-at="2021-07-31T16:38:09Z">
+    <groups>
+    </groups>
+    <test name="AccountsOverview" duration-ms="2080" started-at="2021-07-31T16:38:02Z" finished-at="2021-07-31T16:38:04Z">
+      <class name="testcases.Test_AccountsOverview">
+        <test-method status="PASS" signature="accountsoverview()[pri:0, instance:testcases.Test_AccountsOverview@21a06946]" name="accountsoverview" duration-ms="2067" started-at="2021-07-31T22:08:02Z" finished-at="2021-07-31T22:08:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- accountsoverview -->
+      </class> <!-- testcases.Test_AccountsOverview -->
+    </test> <!-- AccountsOverview -->
+    <test name="TransferFunds" duration-ms="1358" started-at="2021-07-31T16:38:04Z" finished-at="2021-07-31T16:38:06Z">
+      <class name="testcases.Test_TransferFunds">
+        <test-method status="FAIL" signature="transferfunds()[pri:0, instance:testcases.Test_TransferFunds@2a18f23c]" name="transferfunds" duration-ms="1356" started-at="2021-07-31T22:08:04Z" finished-at="2021-07-31T22:08:06Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Cannot locate option with index: 2
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'LAPTOP-6M11SU0V', ip: '192.168.0.194', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate option with index: 2
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:13:22.693Z'
+System info: host: 'LAPTOP-6M11SU0V', ip: '192.168.0.194', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByIndex(Select.java:183)
+	at testcases.Test_TransferFunds.selecttoaccount(Test_TransferFunds.java:34)
+	at testcases.Test_TransferFunds.transferfunds(Test_TransferFunds.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:663)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:849)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1157)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1200)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1125)
+	at org.testng.TestNG.run(TestNG.java:1033)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- transferfunds -->
+      </class> <!-- testcases.Test_TransferFunds -->
+    </test> <!-- TransferFunds -->
+    <test name="BillPaymentService" duration-ms="1959" started-at="2021-07-31T16:38:06Z" finished-at="2021-07-31T16:38:08Z">
+      <class name="testcases.Test_BillPaymentService">
+        <test-method status="PASS" signature="BillPaymentService()[pri:0, instance:testcases.Test_BillPaymentService@47f37ef1]" name="BillPaymentService" duration-ms="1958" started-at="2021-07-31T22:08:06Z" finished-at="2021-07-31T22:08:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BillPaymentService -->
+      </class> <!-- testcases.Test_BillPaymentService -->
+    </test> <!-- BillPaymentService -->
+    <test name="UpdateProfile" duration-ms="1387" started-at="2021-07-31T16:38:08Z" finished-at="2021-07-31T16:38:09Z">
+      <class name="testcases.Test_UpdateProfile">
+        <test-method status="PASS" signature="launchbrowser()[pri:0, instance:testcases.Test_UpdateProfile@45c8e616]" name="launchbrowser" is-config="true" duration-ms="6333" started-at="2021-07-31T22:07:56Z" finished-at="2021-07-31T22:08:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchbrowser -->
+        <test-method status="PASS" signature="updateprofile()[pri:0, instance:testcases.Test_UpdateProfile@45c8e616]" name="updateprofile" duration-ms="1386" started-at="2021-07-31T22:08:08Z" finished-at="2021-07-31T22:08:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateprofile -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:testcases.Test_UpdateProfile@45c8e616]" name="teardown" is-config="true" duration-ms="7509" started-at="2021-07-31T22:08:09Z" finished-at="2021-07-31T22:08:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- testcases.Test_UpdateProfile -->
+    </test> <!-- UpdateProfile -->
+  </suite> <!-- Prabank -->
+</testng-results>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Prabank]">
+  <test name="TransferFunds(failed)">
+    <classes>
+      <class name="testcases.Test_TransferFunds">
+        <methods>
+          <include name="transferfunds"/>
+        </methods>
+      </class> <!-- testcases.Test_TransferFunds -->
+      <class name="testcases.Test_UpdateProfile">
+        <methods>
+          <include name="teardown"/>
+          <include name="launchbrowser"/>
+        </methods>
+      </class> <!-- testcases.Test_UpdateProfile -->
+    </classes>
+  </test> <!-- TransferFunds(failed) -->
+</suite> <!-- Failed suite [Prabank] -->
