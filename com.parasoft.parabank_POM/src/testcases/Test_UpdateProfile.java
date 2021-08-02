@@ -2,7 +2,7 @@ package testcases;
 
 import java.util.concurrent.TimeUnit;
 
-import org.apache.log4j.Logger;
+
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -13,7 +13,7 @@ import pageobjects.PO_login;
 public class Test_UpdateProfile extends CommonFunctions {
 
 	String actualmessage = null;
-	static Logger logger = Logger.getLogger(Test_UpdateProfile.class);
+	
 	
 	public void login() {
 
@@ -40,7 +40,7 @@ public class Test_UpdateProfile extends CommonFunctions {
 
 		driver.manage().timeouts().implicitlyWait(05, TimeUnit.SECONDS);
 		/*login();*/
-		logger.info("4th - Update profile Starts");
+	
 		PageFactory.initElements(driver, PO_UpdateProfile.class);
 		PO_UpdateProfile.updatecontacttab.click();
 		PO_UpdateProfile.profileFirstName.sendKeys(properties.getProperty("ProfileFirstName"));
@@ -52,7 +52,7 @@ public class Test_UpdateProfile extends CommonFunctions {
 		PO_UpdateProfile.profilePhoneNumber.sendKeys(properties.getProperty("ProfilePhoneNumber"));
 		PO_UpdateProfile.updatebutton.click();
 		successmessage();
-		logger.info("4th - Update profile Ends");
+	
 
 	}
 
