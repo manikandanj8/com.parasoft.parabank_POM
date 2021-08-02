@@ -2,7 +2,6 @@ package testcases;
 
 import java.util.concurrent.TimeUnit;
 
-import org.apache.log4j.Logger;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
@@ -14,7 +13,7 @@ import pageobjects.PO_login;
 public class Test_TransferFunds extends CommonFunctions {
 
 	String actualmessage = null;
-	static Logger logger = Logger.getLogger(Test_TransferFunds.class);
+	
 
 	public void login() {
 
@@ -54,14 +53,14 @@ public class Test_TransferFunds extends CommonFunctions {
 		PageFactory.initElements(driver, PO_TransferFunds.class);
 		driver.manage().timeouts().implicitlyWait(05, TimeUnit.SECONDS);
 		/*login();*/
-		logger.info("2nd - Transfer_Fund Starts");
+	
 		PO_TransferFunds.transferfunds.click();
 		PO_TransferFunds.transferamt.sendKeys(properties.getProperty("Transferamt"));
 		selecttoaccount();
 		PO_TransferFunds.transferbuttonb.click();
 		successmessag();
 		org.testng.Assert.assertEquals(actualmessage, "Transfer Complete!");
-		logger.info("2nd - Transfer_Fund Ends");
+		
 	}
 
 }
