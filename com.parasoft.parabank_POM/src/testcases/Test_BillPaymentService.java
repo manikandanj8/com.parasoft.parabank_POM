@@ -2,7 +2,6 @@ package testcases;
 
 import java.util.concurrent.TimeUnit;
 
-import org.apache.log4j.Logger;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -15,7 +14,7 @@ public class Test_BillPaymentService extends CommonFunctions {
 
 	String actual = "Bill Payment Complete";
 	String expected ="Bill Payment Complete";
-	static Logger logger = Logger.getLogger(Test_BillPaymentService.class);
+
 	
 	public void login() {
 
@@ -43,7 +42,7 @@ public class Test_BillPaymentService extends CommonFunctions {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	/*	login();*/
 		
-		logger.info("3rd - Bill payment Service Starts");
+
 		PageFactory.initElements(driver, PO_BillPaymentService.class);
 		PO_BillPaymentService.Billpay.click();
 		PO_BillPaymentService.Payeename.sendKeys(properties.getProperty("PayeeName"));
@@ -57,7 +56,7 @@ public class Test_BillPaymentService extends CommonFunctions {
 		PO_BillPaymentService.amount.sendKeys(properties.getProperty("Amt"));
 		PO_BillPaymentService.sendpaymentbutton.click();
 		paymentconfirmation();
-		logger.info("3rd - Bill payment Service Ends");
+		
 
 	}
 }
